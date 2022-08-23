@@ -22,3 +22,14 @@ expected output:
 >bankAccount();
   >name: "nameInput";
   >deposit: initialDepositInput + number;
+
+------------------------------
+
+Test: This should create a method called withdraw() that wil subtract the withdrawl amount from the balance.a
+
+Code:
+bankAccount.withdraw(number);
+
+expected output: 
+>bankAccount.withdraw("number");
+balance - "number"

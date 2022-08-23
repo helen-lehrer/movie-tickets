@@ -6,3 +6,7 @@ function BankAccount(name, balance) {
 BankAccount.prototype.deposit = function (number) {
   return this.balance + parseInt(number);
 }
+
+BankAccount.prototype.withdraw = function (number) {
+  return this.balance - parseInt(number);
+}
