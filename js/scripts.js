@@ -1,10 +1,8 @@
-function deposit () {
-  this.name = {};
-  this.deposits = {};
-} 
-
-function BankAccount(name, deposit) {
+function BankAccount(name, balance) {
   this.name = name;
-  this.balance = balance;
+  this.balance = parseInt(balance);
 }
 
+BankAccount.prototype.deposit = function (number) {
+  return this.balance + parseInt(number);
+}
